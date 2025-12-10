@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['php82', 'php82Extensions.mysqli', 'php82Extensions.pdo', 'php82Extensions.pdo_mysql', 'php82Extensions.mbstring', 'php82Extensions.xml', 'php82Extensions.curl']
+nixPkgs = ['php82', 'php82Extensions.mysqli', 'php82Extensions.pdo', 'php82Extensions.pdo_mysql', 'php82Extensions.mbstring', 'php82Extensions.xml', 'php82Extensions.curl', 'php82Extensions.gd']
 
 [phases.install]
 cmds = ['composer install --no-dev --optimize-autoloader --no-interaction']
@@ -9,6 +9,7 @@ cmds = [
     'php artisan config:clear',
     'php artisan cache:clear',
     'php artisan view:clear',
+    'php artisan storage:link',
     'chmod -R 775 storage bootstrap/cache'
 ]
 
