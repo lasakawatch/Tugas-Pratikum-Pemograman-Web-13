@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Portofolio Saya')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
             display: flex;
@@ -61,8 +62,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand telkom-header" href="{{ route('home') }}">
-                <!-- Placeholder Logo -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Telkom_University_Logo.png" alt="Logo" class="telkom-logo">
+                <!-- Logo -->
+                <img src="{{ asset('3.png') }}" alt="Logo" class="telkom-logo">
                 <div class="telkom-text">
                     <h5>Fakultas Informatika</h5>
                     <p>School of Computing</p>
@@ -82,6 +83,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('dashboard') }}">Commercial</a>
                     </li>
                 </ul>
             </div>

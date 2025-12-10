@@ -28,6 +28,7 @@
             <p>Email: naufal@example.com</p>
             <p>Telepon: +62 812 3456 7890</p>
             <p>Alamat: Jakarta, Indonesia</p>
+            <p><i class="bi bi-github"></i> GitHub: <a href="https://github.com/lasakawatch" target="_blank">https://github.com/lasakawatch</a></p>
         </div>
     </div>
 @endsection
