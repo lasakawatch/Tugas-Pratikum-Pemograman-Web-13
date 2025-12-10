@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Web Week 13 - Naufal</title>
+    <title>Portfolio Naufal - Telkom University</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #800000 0%, #cc0000 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -26,33 +26,53 @@
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             padding: 50px;
-            max-width: 800px;
+            max-width: 700px;
             width: 100%;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
         }
         
         h1 {
-            color: #667eea;
-            margin-bottom: 20px;
-            text-align: center;
+            color: #800000;
+            margin-bottom: 10px;
             font-size: 2.5em;
         }
         
-        p {
+        .subtitle {
             color: #666;
-            text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             font-size: 1.1em;
         }
         
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        .university {
+            color: #800000;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 1em;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 4px solid #800000;
+        }
+        
+        .info-box p {
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            text-align: left;
         }
         
         .link-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px 30px;
+            background: linear-gradient(135deg, #800000 0%, #cc0000 100%);
+            padding: 25px 35px;
             border-radius: 10px;
             text-decoration: none;
             color: white;
@@ -60,15 +80,16 @@
             justify-content: space-between;
             align-items: center;
             transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
         }
         
         .link-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 30px rgba(128, 0, 0, 0.4);
         }
         
         .link-title {
-            font-size: 1.3em;
+            font-size: 1.4em;
             font-weight: bold;
         }
         
@@ -78,7 +99,7 @@
         }
         
         .arrow {
-            font-size: 1.5em;
+            font-size: 1.8em;
         }
         
         @media (max-width: 600px) {
@@ -94,26 +115,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎓 Tugas Web Week 13</h1>
-        <p>Portfolio Laravel dan Contoh Animasi Website</p>
+        <img src="portofolio-naufal/public/3.png" alt="Telkom University Logo" class="logo">
+        <h1>Portfolio Naufal</h1>
+        <p class="subtitle">Naufal Saifullah Yusuf</p>
+        <p class="university">Fakultas Informatika - Telkom University</p>
         
-        <div class="links">
-            <a href="portofolio-naufal/public/index.php" class="link-card">
-                <div>
-                    <div class="link-title">📁 Portfolio Laravel</div>
-                    <div class="link-description">Aplikasi Portfolio dengan Laravel</div>
-                </div>
-                <span class="arrow">→</span>
-            </a>
-            
-            <a href="31 Cool Website Animation Examples And Effects for Inspiration.html" class="link-card">
-                <div>
-                    <div class="link-title">✨ Website Animation Examples</div>
-                    <div class="link-description">31 Contoh Animasi Website Keren</div>
-                </div>
-                <span class="arrow">→</span>
-            </a>
+        <div class="info-box">
+            <p><strong>📚 Tugas:</strong> Pemrograman Web - Week 13</p>
+            <p><strong>🎯 Project:</strong> Portfolio Laravel Application</p>
+            <p><strong>📧 Email:</strong> naufal@student.telkomuniversity.ac.id</p>
         </div>
+        
+        <a href="portofolio-naufal/public/index.php" class="link-card">
+            <div>
+                <div class="link-title">🚀 Lihat Portfolio</div>
+                <div class="link-description">Aplikasi Portfolio dengan Laravel Framework</div>
+            </div>
+            <span class="arrow">→</span>
+        </a>
     </div>
 </body>
 </html>
