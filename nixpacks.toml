@@ -10,6 +10,7 @@ cmds = [
     'php artisan cache:clear',
     'php artisan view:clear',
     'php artisan storage:link',
+    'php artisan migrate --force',
     'chmod -R 775 storage bootstrap/cache'
 ]
 
